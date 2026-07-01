@@ -72,9 +72,22 @@
       },
     }, 0.1);
 
-    tl.fromTo(".marker-dxb-ring",
-      { scale: 0.7, opacity: 0, transformOrigin: "center" },
-      { scale: 2.2, opacity: 0, duration: 1.1, repeat: -1, ease: "power1.out", transformOrigin: "center" }, 1.4);
+    gsap.fromTo(
+  ".marker-dxb-ring",
+  {
+    scale: 0.7,
+    opacity: 0,
+    transformOrigin: "center"
+  },
+  {
+    scale: 2.2,
+    opacity: 0,
+    duration: 1.1,
+    repeat: -1,
+    ease: "power1.out",
+    transformOrigin: "center"
+  }
+);
 
     tl.to(".marker-dxb-dot", {
       scale: 2.5, fill: "#8EC5FF", filter: "drop-shadow(0 0 10px #8EC5FF)",
