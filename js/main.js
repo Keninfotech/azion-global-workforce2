@@ -8,8 +8,7 @@
   <header class="nav" id="nav">
     <div class="nav-inner">
       <a href="index.html" class="brand">
-        <span class="brand-mark">A</span>
-        <span>AZION</span>
+        <img src="logo.png" alt="AZION logo" class="brand-logo" />
       </a>
       <ul class="nav-links">
         <li><a href="index.html" class="${active("index.html")}">Home</a></li>
@@ -186,3 +185,4 @@
     p.addEventListener("mouseleave", () => { if (label) label.setAttribute("opacity", "0"); });
   });
 })();
+
