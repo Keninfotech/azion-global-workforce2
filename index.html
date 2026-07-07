@@ -21,141 +21,17 @@
 
   <!-- ===== Page Loader ===== -->
   <div id="page-loader" class="loader-root">
-    <div class="loader-bg solid"></div>
-    <div class="loader-bg radial"></div>
-    <div class="loader-bg loader-clouds">
-      <svg class="c1" viewBox="0 0 100 40">
-        <path d="M 10 30 Q 15 15, 30 20 Q 40 10, 60 15 Q 75 10, 85 25 Q 95 30, 90 35 Z" fill="currentColor" />
-      </svg>
-      <svg class="c2" viewBox="0 0 100 40">
-        <path d="M 10 30 Q 15 15, 30 20 Q 40 10, 60 15 Q 75 10, 85 25 Q 95 30, 90 35 Z" fill="currentColor" />
-      </svg>
-      <svg class="c3" viewBox="0 0 100 40">
-        <path d="M 10 30 Q 15 15, 30 20 Q 40 10, 60 15 Q 75 10, 85 25 Q 95 30, 90 35 Z" fill="currentColor" />
-      </svg>
-    </div>
-    <div class="loader-content">
-      <div class="loader-map">
-        <div class="loader-map-bg">
-          <svg viewBox="0 0 1000 400" fill="none">
-            <defs>
-              <pattern id="dot-grid-loader" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
-                <circle cx="2" cy="2" r="1.1" fill="currentColor" opacity="0.3" />
-              </pattern>
-            </defs>
-            <rect width="1000" height="400" fill="url(#dot-grid-loader)" />
-          </svg>
-        </div>
-        <svg class="loader-svg" viewBox="0 0 1000 400">
-          <defs>
-            <linearGradient id="flight-grad" x1="0%" y1="100%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#8EC5FF" />
-              <stop offset="50%" stop-color="#2E7BFF" />
-              <stop offset="100%" stop-color="#0057FF" />
-            </linearGradient>
-            <filter id="path-glow" x="-20%" y="-20%" width="140%" height="140%">
-              <feGaussianBlur stdDeviation="4" result="blur" />
-              <feMerge>
-                <feMergeNode in="blur" />
-                <feMergeNode in="SourceGraphic" />
-              </feMerge>
-            </filter>
-            <filter id="plane-glow" x="-80%" y="-80%" width="260%" height="260%">
-              <feGaussianBlur stdDeviation="10" result="blur" />
-              <feMerge>
-                <feMergeNode in="blur" />
-                <feMergeNode in="SourceGraphic" />
-              </feMerge>
-            </filter>
-          </defs>
-
-          <path class="flight-glow" d="M173 233 C 335 132, 496 110, 776 134" fill="none" stroke="#2E7BFF"
-            stroke-width="6" stroke-linecap="round" opacity="0.35" filter="url(#path-glow)" />
-          <path class="flight-path" d="M173 233 C 335 132, 496 110, 776 134" fill="none" stroke="url(#flight-grad)"
-            stroke-width="2.5" stroke-linecap="round" />
-
-          <circle id="loader-particle-0" r="3" fill="#8EC5FF" cx="0" cy="0"
-            style="opacity:0;filter:drop-shadow(0 0 3px #2E7BFF)" />
-          <circle id="loader-particle-1" r="3" fill="#8EC5FF" cx="0" cy="0"
-            style="opacity:0;filter:drop-shadow(0 0 3px #2E7BFF)" />
-          <circle id="loader-particle-2" r="3" fill="#8EC5FF" cx="0" cy="0"
-            style="opacity:0;filter:drop-shadow(0 0 3px #2E7BFF)" />
-          <circle id="loader-particle-3" r="3" fill="#8EC5FF" cx="0" cy="0"
-            style="opacity:0;filter:drop-shadow(0 0 3px #2E7BFF)" />
-          <circle id="loader-particle-4" r="3" fill="#8EC5FF" cx="0" cy="0"
-            style="opacity:0;filter:drop-shadow(0 0 3px #2E7BFF)" />
-          <circle id="loader-particle-5" r="3" fill="#8EC5FF" cx="0" cy="0"
-            style="opacity:0;filter:drop-shadow(0 0 3px #2E7BFF)" />
-          <circle id="loader-particle-6" r="3" fill="#8EC5FF" cx="0" cy="0"
-            style="opacity:0;filter:drop-shadow(0 0 3px #2E7BFF)" />
-          <circle id="loader-particle-7" r="3" fill="#8EC5FF" cx="0" cy="0"
-            style="opacity:0;filter:drop-shadow(0 0 3px #2E7BFF)" />
-          <circle id="loader-particle-8" r="3" fill="#8EC5FF" cx="0" cy="0"
-            style="opacity:0;filter:drop-shadow(0 0 3px #2E7BFF)" />
-          <circle id="loader-particle-9" r="3" fill="#8EC5FF" cx="0" cy="0"
-            style="opacity:0;filter:drop-shadow(0 0 3px #2E7BFF)" />
-          <circle id="loader-particle-10" r="3" fill="#8EC5FF" cx="0" cy="0"
-            style="opacity:0;filter:drop-shadow(0 0 3px #2E7BFF)" />
-          <circle id="loader-particle-11" r="3" fill="#8EC5FF" cx="0" cy="0"
-            style="opacity:0;filter:drop-shadow(0 0 3px #2E7BFF)" />
-          <circle id="loader-particle-12" r="3" fill="#8EC5FF" cx="0" cy="0"
-            style="opacity:0;filter:drop-shadow(0 0 3px #2E7BFF)" />
-          <circle id="loader-particle-13" r="3" fill="#8EC5FF" cx="0" cy="0"
-            style="opacity:0;filter:drop-shadow(0 0 3px #2E7BFF)" />
-          <circle id="loader-particle-14" r="3" fill="#8EC5FF" cx="0" cy="0"
-            style="opacity:0;filter:drop-shadow(0 0 3px #2E7BFF)" />
-
-          <g transform="translate(173, 233)" class="marker-blr">
-            <circle r="4.5" fill="#8EC5FF" />
-            <circle r="14" fill="none" stroke="#8EC5FF" stroke-width="1.5" />
-            <text x="-8" y="-18" fill="#8EC5FF" text-anchor="end">Bangalore</text>
-          </g>
-          <g transform="translate(776, 134)" class="marker-dxb">
-            <circle r="4.5" fill="#2E7BFF" class="marker-dxb-dot" />
-            <circle r="14" fill="none" stroke="#2E7BFF" stroke-width="1.5" class="marker-dxb-ring" />
-            <text x="14" y="18" fill="#2E7BFF">Dubai</text>
-          </g>
-
-          <g class="plane-group" opacity="0" style="filter:url(#plane-glow)">
-            <g transform="translate(-256,-256)">
-              <polygon fill="#E2E8F0" points="267.342,237.829 173.993,0 226.41,0 377.713,237.829" />
-              <path fill="#FFFFFF"
-                d="M497.958,259.18l-14.559-7.004l-6.745-14.284c-19.342-13.812-48.901-24.332-93.788-24.332c-142.684,0-328.62,0-328.62,0l-20.761-53.215H0v138.37h257.708L173.993,512h52.417c21.565-37.033,130.957-205.984,135.685-213.286H512C512,291.494,509.359,275.432,497.958,259.18z" />
-              <g>
-                <path fill="#3B82F6"
-                  d="M477.952,262.091h12.133c3.005,0,5.75-1.098,7.868-2.907c-5.136-7.322-12.051-14.679-21.303-21.286c-6.088,0.65-10.831,5.801-10.831,12.061C465.819,256.658,471.251,262.091,477.952,262.091z" />
-                <path fill="#2E7BFF"
-                  d="M429.421,262.091h-12.133c-6.701,0-12.133-5.433-12.133-12.133s5.432-12.133,12.133-12.133h12.133c6.701,0,12.133,5.433,12.133,12.133S436.121,262.091,429.421,262.091z" />
-                <path fill="#2E7BFF"
-                  d="M368.758,262.091h-12.133c-6.701,0-12.133-5.433-12.133-12.133s5.432-12.133,12.133-12.133h12.133c6.701,0,12.133,5.433,12.133,12.133S375.457,262.091,368.758,262.091z" />
-                <path fill="#2E7BFF"
-                  d="M308.094,262.091h-12.133c-6.701,0-12.133-5.433-12.133-12.133s5.432-12.133,12.133-12.133h12.133c6.701,0,12.133,5.433,12.133,12.133S314.794,262.091,308.094,262.091z" />
-                <path fill="#2E7BFF"
-                  d="M247.431,262.091h-12.133c-6.701,0-12.133-5.433-12.133-12.133s5.432-12.133,12.133-12.133h12.133c6.701,0,12.133,5.433,12.133,12.133S254.13,262.091,247.431,262.091z" />
-                <path fill="#2E7BFF"
-                  d="M186.767,262.091h-12.133c-6.701,0-12.133-5.433-12.133-12.133s5.432-12.133,12.133-12.133h12.133c6.701,0,12.133,5.433,12.133,12.133S193.467,262.091,186.767,262.091z" />
-                <path fill="#2E7BFF"
-                  d="M126.104,262.091h-12.133c-6.701,0-12.133-5.433-12.133-12.133s5.432-12.133,12.133-12.133h12.133c6.701,0,12.133,5.433,12.133,12.133S132.803,262.091,126.104,262.091z" />
-              </g>
-            </g>
-          </g>
-        </svg>
-      </div>
-
-      <div class="loader-caption">
-        <div class="stack">
-          <p class="loader-text-1">Connecting Global Talent</p>
-          <p class="loader-text-2">From Bangalore to Dubai</p>
-          <h1 class="loader-text-3">AZION<span>Your Global Workforce Partner</span></h1>
-        </div>
-      </div>
+    <div class="loader-video-shell">
+      <video id="loader-video" class="loader-video" autoplay muted playsinline preload="auto">
+        <source src="images/watermark-removed-VID-20260706-WA0016.mp4" type="video/mp4" />
+      </video>
     </div>
   </div>
 
   <div id="nav-mount"></div>
 
   <!-- ===== Hero ===== -->
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="blob" style="top:-100px;right:-80px;height:420px;width:420px;background:rgba(45,127,249,0.2);"></div>
     <div class="blob"
       style="top:50%;left:-120px;height:360px;width:360px;background:rgba(247,148,29,0.15);animation-delay:-8s;"></div>
@@ -212,7 +88,7 @@
   </section>
 
   <!-- ===== About ===== -->
-  <section class="section">
+  <section class="section" id="about">
     <div class="container two-col">
       <div class="about-visual reveal">
         <div class="frame1"></div>
@@ -273,7 +149,7 @@
   </section>
 
   <!-- ===== Services ===== -->
-  <section class="section section-alt">
+  <section class="section section-alt" id="services-preview">
     <div class="container">
       <div class="section-head reveal">
         <p class="section-eyebrow">Services & Industries Served</p>
@@ -332,7 +208,7 @@
   </section>
 
   <!-- ===== Why Choose ===== -->
-  <section class="section">
+  <section class="section" id="why-preview">
     <div class="container">
       <div class="section-head reveal">
         <p class="section-eyebrow">Why Choose AZION</p>
@@ -400,7 +276,7 @@
   </section>
 
   <!-- ===== Process ===== -->
-  <section class="section section-alt">
+  <section class="section section-alt" id="process-preview">
     <div class="container">
       <div class="section-head reveal">
         <p class="section-eyebrow">Process</p>
@@ -508,7 +384,7 @@
   </section>
 
   <!-- ===== Testimonials ===== -->
-  <section class="section section-alt">
+  <section class="section section-alt" id="testimonials">
     <div class="container testimonials">
       <p class="section-eyebrow">Testimonials</p>
       <h2>Trusted by global teams.</h2>
@@ -597,3 +473,4 @@
 </body>
 
 </html>
+
